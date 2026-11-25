@@ -685,6 +685,7 @@ window.ModelViewer = {
     const scene = new THREE.Scene();
     const camera = new THREE.PerspectiveCamera(40,1,0.01,1000);
     scene.add(new THREE.HemisphereLight(0xffffff,0x222222,1.6));
+    scene.add(new THREE.AmbientLight(0xffffff,1.2));
     const key = new THREE.DirectionalLight(0xffffff,2.2); key.position.set(3,5,4); scene.add(key);
     const rim = new THREE.DirectionalLight(0xd6ff3c,1.2); rim.position.set(-4,2,-3); scene.add(rim);
 
